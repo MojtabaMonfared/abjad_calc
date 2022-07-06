@@ -20,7 +20,6 @@
         <style>
             html {
                 font-family: 'Mirza', cursive;
-                font-size: 25px;
             }
             .vl {
                 border-left: 4px solid rgb(160, 160, 160);
@@ -28,8 +27,8 @@
                 }
         </style>
 
-        <div class="flex flex-wrap justify-center items-center w-full h-full">
-                <p id="result" class="text-2xl hover:text-yellow-400">
+        <div class="flex justify-center items-center w-full h-full">
+                <p id="result" class="text-2xl hover:text-yellow-400 md:mr-3">
                     محاسبه ابجد حروف
                 </p>
 
@@ -40,32 +39,32 @@
               hx-target="#result"
               hx-swap="innerHTML">
 
-                <div class="mb-6">
-                    <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">نام مورد نظر</label>
-                    <input type="text" id="text" name="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-blue-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="اینجا وارد کنید..." required>
+                <div class="mb-6 md:ml-3">
+                    <label for="text" class="block mb-2 text-sm font-medium text-gray-900">نام مورد نظر</label>
+                    <input type="text" id="text" name="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="اینجا وارد کنید..." required>
                 </div>
 
-                <div class="flex items-center mb-4">
-                    <input id="kabir" type="radio" name="mode" value="kabir" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600" required>
+                <div class="flex items-center mb-4 md:ml-3">
+                    <input id="kabir" type="radio" name="mode" value="kabir" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300" required>
                     <label for="kabir" class="block mr-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                       ابجد کبیر
                     </label>
                   </div>
-                  <div class="flex items-center mb-4">
-                    <input id="saqir" type="radio" name="mode" value="saqir" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600" required>
+                  <div class="flex items-center mb-4 md:ml-3">
+                    <input id="saqir" type="radio" name="mode" value="saqir" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300" required>
                     <label for="saqir" class="block mr-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                       ابجد صغیر
                     </label>
                   </div>
 
                 <button type="submit"
-                        class="text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
                 >محاسبه</button>
         </form>
     </div>
 
-      <footer class="footer w-full bottom-0 fixed items-center p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800" style="font-family: monospace;">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Made with ❤️ by <a href="https://github.com/MojtabaMonfared">MojtabaMonfared</a>
+      <footer class="footer w-full bottom-0 fixed justify-center p-4 bg-gray-50 rounded-lg shadow md:flex md:items-center md:justify-between md:p-6" style="font-family: monospace;">
+          <span class="text-sm text-gray-500 sm:text-center">Made with ❤️ by <a href="https://github.com/MojtabaMonfared">MojtabaMonfared</a>
           </span>
       </footer>
 
